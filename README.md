@@ -22,5 +22,5 @@ Good luck and we are excited to get to know you better ;-)
 
 ## Answer ##
 
-Using XGboost algorithm over linear regression I built a prediction solution that should have R2 value of aproximately .
-This solution have high bias because the R2 train value was and the R2 test value was
+Using a basic approach with XGboost algorithm over linear regression I built a predictive solution that should have R2 value of approximately 0.365 due to the test set evaluation. The train set had a R2 value of 0.883, this higher value may indicate the poor generalization of the built model although R2 may not be the best metric to evaluate a regression algorithm.
+
