@@ -1,0 +1,35 @@
+
+echo 'deb http://cran.fiocruz.br/bin/linux/ubuntu/ trusty/' >> /etc/apt/sources.list
+
+gpg --keyserver pgp.mit.edu --recv-key 51716619E084DAB9
+gpg -a --export 51716619E084DAB9 > Michael_Rutter_key.asc
+sudo apt-key add Michael_Rutter_key.asc
+
+sudo apt-get update
+sudo apt-get install r-base r-base-dev
+
+
+# on R:
+
+install.packages("corrplot")
+install.packages("data.table")
+install.packages("magrittr")
+install.packages("stringr")
+install.packages("drat")
+install.packages("Ckmeans.1d.dp")
+install.packages("DiagrammeR")
+install.packages("DMwR")
+
+drat:::addRepo("dmlc")
+install.packages("xgboost")
+
+library(xgboost)
+
+install.packages("caret")
+
+
+# git clone --recursive https://github.com/dmlc/xgboost
+# cd xgboost; make -j4
+
+# R CMD INSTALL xgboost_0.4-3.tar.gz
+

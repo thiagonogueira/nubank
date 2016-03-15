@@ -1,0 +1,9 @@
+python-magic
+pandas
+NumPy
+SciPy
+scikit-learn
+pyyaml
+h5py
+Cython
+keras
